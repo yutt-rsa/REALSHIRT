@@ -19,7 +19,7 @@ const translations = {
     'nav.products': 'Layanan',
     'nav.gallery': 'Galeri',
     'nav.testimonials': 'Testimoni',
-    'nav.upload': 'Upload Desain',
+    'nav.upload': 'Pesan Kaos',
     'nav.contact': 'Kontak',
     
     // Common
@@ -70,7 +70,7 @@ const translations = {
     'nav.products': 'Services',
     'nav.gallery': 'Gallery',
     'nav.testimonials': 'Testimonials',
-    'nav.upload': 'Upload Design',
+    'nav.upload': 'Order T-Shirt',
     'nav.contact': 'Contact',
     
     // Common
