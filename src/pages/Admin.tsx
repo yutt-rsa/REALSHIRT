@@ -16,6 +16,7 @@ import {
 } from '@/components/ui/dialog';
 import { Textarea } from '@/components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
+import { DatabaseStatus } from '@/components/DatabaseStatus';
 
 interface GalleryItem {
   id: string;
@@ -329,6 +330,11 @@ const Admin = () => {
               </form>
             </DialogContent>
           </Dialog>
+        </div>
+
+        {/* Database Status Monitor */}
+        <div className="mb-8">
+          <DatabaseStatus />
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">

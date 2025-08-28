@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import UserMenu from "./UserMenu";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { DatabaseStatusIndicator } from "./DatabaseStatusIndicator";
 import { useLanguage } from "@/contexts/LanguageContext";
 
 const Header = () => {
@@ -54,7 +55,8 @@ const Header = () => {
         </nav>
 
         {/* Desktop CTA */}
-        <div className="hidden lg:flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-2">
+          <DatabaseStatusIndicator />
           <LanguageSwitcher />
           <UserMenu />
         </div>
@@ -89,6 +91,7 @@ const Header = () => {
               </Link>
             ))}
             <div className="px-4 py-3 space-y-3 border-t border-white/10 mt-2 pt-4">
+              <DatabaseStatusIndicator />
               <LanguageSwitcher />
               <UserMenu />
             </div>
